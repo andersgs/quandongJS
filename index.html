@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="QuandongApp">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Nullarbor Report</title>
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ui-sref="home">Nullarbor</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="qc">QC</a></li>
+                    <li><a ui-sref="mlst">MLST</a></li>
+                    <li><a ui-sref="resistome">Resistome</a></li>
+                    <li><a ui-sref="phylogenetics">Phylogenetics</a></li>
+                    <li><a ui-sref="isolates">Isolates</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <ui-view></ui-view>
+        </div>
+
+    <!-- load angular and ui.router -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- load quandong app -->
+    <script src="app/quandong.app.js" charset="utf-8"></script>
+    <script src="app/route.js" charset="utf-8"></script>
+
+    <!-- load services -->
+    <script src="app/services/data.service.js" charset="utf-8"></script>
+
+    <!-- load controllers -->
+    <script src="app/controllers/mlst.controller.js" charset="utf-8"></script>
+
+    <!-- load components -->
+    <script src="app/components/mlst.component.js" charset="utf-8"></script>
+
+    </body>
+</html>
