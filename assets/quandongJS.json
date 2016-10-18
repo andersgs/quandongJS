@@ -1,6 +1,6 @@
 {
     "MLST" : [
-        {"isolate":"2999-99990",
+        {"isolate":"2999-99990-1",
          "scheme":"senterica",
          "st":"11",
          "alleles":["aroC(5)","dnaN(2)","hemD(3)","hisD(7)","purE(6)","sucA(6)","thrA(11)"],
@@ -59,6 +59,38 @@
          "st":"11",
          "alleles":["aroC(5)","dnaN(2)","hemD(3)","hisD(7)","purE(6)","sucA(6)","thrA(11)"],
          "quality":"PASSED"
+        }
+    ],
+    "Resistome": [
+        {"Isolate":"2999-99998",
+        "Results": ["QnrS1","aac(3)-IId","blaCTX-M-55","blaTEM-1B","catA2","strA","strB","sul2","tet(B)"]
+        }, 
+        {"Isolate":"2999-99995",
+        "Results": []
+        }, 
+        {"Isolate":"2999-99994",
+        "Results": ["aadA2","aadB","blaCTX-M-9","catA1","tet(A)","aadA1?","dfrA16?","sul1?"]
+        }, 
+        {"Isolate":"2999-99991",
+        "Results": []
+        }, 
+        {"Isolate":"2999-99996",
+        "Results": []
+        }, 
+        {"Isolate":"2999-99993",
+        "Results": []
+        }, 
+        {"Isolate":"2999-99999",
+        "Results": ["tet(A)"]
+        }, 
+        {"Isolate":"2999-99990",
+        "Results": ["blaCTX-M-55","fosA","blaTEM-1B?"]
+        }, 
+        {"Isolate":"2999-99992",
+        "Results": ["blaCMY-2"]
+        }, 
+        {"Isolate":"2999-99997",
+        "Results": ["QnrA1","aac(3)-IId","aac(6')Ib-cr","blaCMY-48","blaKPC-2","blaOXA-1","blaSHV-12","blaTEM-1B","catA2","catB3","dfrA1","dfrA18","strA","strB","sul1","sul2","tet(A)","tet(D)","ARR-3?","QnrB19?","aadA1?","mph(A)?"]
         }
     ]
 }

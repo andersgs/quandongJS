@@ -29,7 +29,7 @@
         .state('mlst', {
             url: '/mlst',
             templateUrl: 'app/templates/mlst.template.html',
-            controller: 'MlstController as mlst',
+            controller: 'MlstController as mlstCtrl',
             resolve: {
                 data: ['DataService', function(DataService){
                     return DataService.getData();
@@ -40,7 +40,13 @@
         //resistome
         .state('resistome', {
             url: '/resistome',
-            templateUrl: 'app/templates/resistome.template.html'
+            templateUrl: 'app/templates/resistome.template.html',
+            controller: 'ResistomeController as resistomeCtrl',
+            resolve: {
+                data: ['DataService', function(DataService){
+                    return DataService.getData();
+                }]
+            }
         })
 
         // phylogenetics

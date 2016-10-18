@@ -1,0 +1,22 @@
+<div class="table-responsive">
+<table class='table table-condensed'>
+    <thead>
+        <tr>
+            <th ng-repeat="header in $ctrl.headers">
+                {{ header }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="isolate in $ctrl.isolates" style="vertical-align: middle">
+            <td style="vertical-align: middle">
+                {{ isolate.id }}
+            </td>
+            <td ng-repeat="gene in $ctrl.headers" class="{{ isolate[gene].display_class }}" style="vertical-align: middle; align: center">
+                <span class="{{ isolate[gene].icon }}" aria-hidden = true> </span>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+</div>
